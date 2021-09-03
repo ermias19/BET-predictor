@@ -122,7 +122,7 @@ Widget buildErrorui(String message){
   );
 
 }
- Widget buildArticleList(List<Players> articles) {
+ Widget buildplayersList(List<Players> articles) {
     return ListView.builder(
       itemCount: articles.length,
       itemBuilder: (ctx, pos) {
@@ -130,7 +130,7 @@ Widget buildErrorui(String message){
           padding: const EdgeInsets.all(8.0),
           child: InkWell(
             child: ListTile(
-              title:Text(articles[pos].club)
+              title:Text(articles[pos].page)
               
               
              
