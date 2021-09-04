@@ -4,15 +4,25 @@ import '../models/players_model.dart';
 import 'dart:async';
 
 
-abstract class Players_api {
+ class Players_api {
   static var player_date;
- static Future<List<Players>>  getplayers() 
+  Future<Players>  getplayers() 
  async{
    player_date=await http.get(Uri.parse('https://www.easports.com/fifa/ultimate-team/api/fut/item?'));
-    var json_data= json.decode(player_date.body);
+   print(player_date.body.toString());
+    
+    if (player_date.statusCode == 200) {
+      print(Players.fromJson(json.decode(player_date.body)));
+      return Players.fromJson(json.decode(player_date.body));
+      
+      }
+      else{
+        throw Exception('failed to load the player status');
+      }
+
     
 
-    return json_data;
+   
 
   }
 }

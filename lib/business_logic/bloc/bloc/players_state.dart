@@ -1,28 +1,37 @@
 
 part of 'players_bloc.dart';
 
-@immutable
-abstract class PlayersState {}
 
+abstract class PlayersState extends Equatable {
+const PlayersState();
+}
 class PlayersInitial extends PlayersState {
+  const PlayersInitial();
+  // TODO: implement props
+   List<Object> get props=>[];
  
    
 }
 class PlayerLoadingState extends PlayersState{
-   List<Players> get props=>[];
-}
-class PlayerLoadedState extends  PlayersState{
-  List<Players> player_list;
-   @override 
+  const PlayerLoadingState();
    List<Object> get props=>[];
+}
+// ignore: must_be_immutable
+class PlayerLoadedState extends  PlayersState{
+  // ignore: non_constant_identifier_names
+  final Players player_list;
+   const PlayerLoadedState(this.player_list);
+   
+   @override
+   List<Object> get props => [player_list];
   
-  PlayerLoadedState( { required this.player_list});
+  // ignore: non_constant_identifier_names
+ 
    
 }
 class PlayerErrorState extends  PlayersState{
 
   String message;
   PlayerErrorState({ required this.message});
-  @override
-   List<Players> get props=>[];
+  List<Players> get props=>[];
 }
