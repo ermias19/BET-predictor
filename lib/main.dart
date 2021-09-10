@@ -2,6 +2,7 @@ import 'package:bloc_e_s/data/models/players_model.dart';
 import 'package:bloc_e_s/presentation/pages/Login/login.dart';
 import 'package:bloc_e_s/presentation/pages/Signup/sign_up.dart';
 import 'package:bloc_e_s/presentation/pages/home/players_home.dart';
+import 'package:bloc_e_s/presentation/pages/home_description/home_descritption.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
