@@ -1,5 +1,8 @@
 import 'package:bloc_e_s/data/models/players_model.dart';
-import 'package:bloc_e_s/presentation/Signup/sign_up.dart';
+import 'package:bloc_e_s/presentation/pages/Login/login.dart';
+import 'package:bloc_e_s/presentation/pages/Signup/sign_up.dart';
+import 'package:bloc_e_s/presentation/pages/home/players_home.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'business_logic/bloc/bloc/players_bloc.dart';
@@ -7,7 +10,7 @@ import 'counter_cubit.dart';
 
 
 
-void main() =>runApp(LoginPage());
+void main() =>runApp(Players_home());
 
 // flutter build ios --debug (or --profile or --release)
 // class MyApp extends StatelessWidget {
