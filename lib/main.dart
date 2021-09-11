@@ -11,7 +11,7 @@ import 'counter_cubit.dart';
 
 
 
-void main() =>runApp(Players_home());
+void main() =>runApp(MyApp());
 
 // flutter build ios --debug (or --profile or --release)
 // class MyApp extends StatelessWidget {
