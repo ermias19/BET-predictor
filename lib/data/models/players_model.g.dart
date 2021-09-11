@@ -9,11 +9,10 @@ part of 'players_model.dart';
 Players _$PlayersFromJson(Map<String, dynamic> json) {
   return Players(
     page: json['page'] as int,
-     
-     totalPages: json['totalPages'] as int,
-     totalResults: json['totalResults'] as int,
-     type: json['type'] as String,
-      count: json['count'] as int,
+    totalPages: json['totalPages'] as int,
+    type: json['type'] as String,
+    totalResults: json['totalResults'] as int,
+    count: json['count'] as int,
   );
 }
 
@@ -23,6 +22,4 @@ Map<String, dynamic> _$PlayersToJson(Players instance) => <String, dynamic>{
       'totalResults': instance.totalResults,
       'type': instance.type,
       'count': instance.count,
-      
-   
     };
