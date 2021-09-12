@@ -12,8 +12,8 @@ import '../pages/home_description/home_descritption.dart' as _i6;
 import '../pages/Login/login.dart' as _i4;
 import '../pages/Signup/sign_up.dart' as _i3;
 
-class Router extends _i1.RootStackRouter {
-  Router([_i2.GlobalKey<_i2.NavigatorState>? navigatorKey])
+class RootRouter extends _i1.RootStackRouter {
+  RootRouter([_i2.GlobalKey<_i2.NavigatorState>? navigatorKey])
       : super(navigatorKey);
 
   @override
@@ -43,7 +43,7 @@ class Router extends _i1.RootStackRouter {
   @override
   List<_i1.RouteConfig> get routes => [
         _i1.RouteConfig('/#redirect',
-            path: '/', redirectTo: '/Sign_Up', fullMatch: true),
+            path: '/', redirectTo: '/Login', fullMatch: true),
         _i1.RouteConfig(Sign_up.name, path: '/Sign_Up'),
         _i1.RouteConfig(LoginRoute.name, path: '/Login'),
         _i1.RouteConfig(Players_home.name, path: '/Players_in'),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:auto_route/auto_route.dart';
+import 'package:bloc_e_s/presentation/routes/router.gr.dart';
 class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -92,10 +93,31 @@ class LoginPage extends StatelessWidget {
                           // ignore: deprecated_member_use
                           child: TextButton(
                             onPressed: () {
-                              // context.router.push(SignupRoute());
+                              context.router.push(Players_home());
                             },
                             child: Text(
-                              "Signup",
+                              "Login",
+                              style: TextStyle(
+                                color: Colors.red,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(top: 50),
+                        child: Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.red, width: 2),
+                              borderRadius: BorderRadius.circular(20)),
+
+                          // ignore: deprecated_member_use
+                          child: TextButton(
+                            onPressed: () {
+                              context.router.push(Sign_up());
+                            },
+                            child: Text(
+                              "create an account",
                               style: TextStyle(
                                 color: Colors.red,
                               ),

@@ -1,8 +1,10 @@
 import 'package:bloc_e_s/data/models/players_model.dart';
-import 'package:bloc_e_s/presentation/pages/Login/login.dart';
+import 'package:auto_route/auto_route.dart';
+
 import 'package:bloc_e_s/presentation/pages/Signup/sign_up.dart';
 import 'package:bloc_e_s/presentation/pages/home/players_home.dart';
 import 'package:bloc_e_s/presentation/pages/home_description/home_descritption.dart';
+import 'package:bloc_e_s/presentation/routes_gen.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,7 +13,7 @@ import 'counter_cubit.dart';
 
 
 
-void main() =>runApp(MyApp());
+void main() =>runApp(MyApp_router());
 
 // flutter build ios --debug (or --profile or --release)
 // class MyApp extends StatelessWidget {
@@ -67,6 +69,17 @@ class _MyApp extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+    //  builder: ExtendedNavigator.builder(
+    //     router: Router(),
+    //     initialRoute: Routes.homeScreen,
+    //     builder: (_, navigator) => Theme(
+    //       data: ThemeData.dark(),
+    //       child: navigator,
+    //     ),
+    //   ),
+
+    //   ),
+     
       home: Scaffold(
         appBar: AppBar(
           // Here we take the value from the MyHomePage object that was created by

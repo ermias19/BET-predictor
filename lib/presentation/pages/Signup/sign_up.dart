@@ -1,19 +1,16 @@
+
+import 'package:bloc_e_s/presentation/pages/Login/login.dart';
+import 'package:bloc_e_s/presentation/routes/router.gr.dart';
 import 'package:flutter/material.dart';
 
+import 'package:auto_route/auto_route.dart';
 class Sign_up extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.black,
-        body: Signup_form(),
-      ),
-    );
-  }
-}
-
-Widget Signup_form() {
-  return Form(
+        body: Form(
     child: Column(
       children: [
         Container(
@@ -165,7 +162,15 @@ Widget Signup_form() {
 
                           // ignore: deprecated_member_use
                           child: TextButton(
+                            // key: Key("signupButton"),
                             onPressed: () {
+                             context.router.push(LoginRoute());
+                              // MaterialPageRoute(
+                              //   builder:(BuildContext context){
+                              //     return LoginPage();
+                              //   }
+                              // );
+                              // context.router.push(LoginRoute);
                               // context.router.push(SignupRoute());
                             },
                             child: Text(
@@ -179,5 +184,11 @@ Widget Signup_form() {
                       )
       ],
     ),
-  );
+  ),
+      ),
+    );
+  }
 }
+
+
+  
