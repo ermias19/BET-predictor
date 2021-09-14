@@ -20,12 +20,16 @@ class PlayerLoadingState extends PlayersState{
 class PlayerLoadedState extends  PlayersState{
   // ignore: non_constant_identifier_names
   final Players player_list;
-   const PlayerLoadedState(this.player_list);
-   
+
+  
+
+
+   const PlayerLoadedState(this.player_list, );
+
+ 
    @override
    List<Object> get props => [player_list];
   
-  // ignore: non_constant_identifier_names
  
    
 }

@@ -11,7 +11,7 @@ Future<Players> getplayers(){
   
   return _provider.getplayers();
   }
-  
+
 //  final ermias= Players_api.getplayers;
 //  final player_api_response=Players_api.player_date;
 //  if(player_api_response.statusCode==200){
