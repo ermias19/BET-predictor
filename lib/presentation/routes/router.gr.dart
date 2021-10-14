@@ -51,25 +51,25 @@ class RootRouter extends _i1.RootStackRouter {
       ];
 }
 
-class Sign_up extends _i1.PageRouteInfo {
+class Sign_up extends _i1.PageRouteInfo<void> {
   const Sign_up() : super(name, path: '/Sign_Up');
 
   static const String name = 'Sign_up';
 }
 
-class LoginRoute extends _i1.PageRouteInfo {
+class LoginRoute extends _i1.PageRouteInfo<void> {
   const LoginRoute() : super(name, path: '/Login');
 
   static const String name = 'LoginRoute';
 }
 
-class Players_home extends _i1.PageRouteInfo {
+class Players_home extends _i1.PageRouteInfo<void> {
   const Players_home() : super(name, path: '/Players_in');
 
   static const String name = 'Players_home';
 }
 
-class Home_description extends _i1.PageRouteInfo {
+class Home_description extends _i1.PageRouteInfo<void> {
   const Home_description() : super(name, path: '/Players_descrition');
 
   static const String name = 'Home_description';

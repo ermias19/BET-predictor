@@ -1,15 +1,15 @@
-import 'package:bloc_e_s/data/dataproviders/lsdb_dao.dart';
-import 'package:bloc_e_s/data/models/login.dart';
+// import 'package:bloc_e_s/data/dataproviders/lsdb_dao.dart';
+// import 'package:bloc_e_s/data/models/login.dart';
 
-class LoginRepository{
-  final Login_repo=LsdbDao();
-  Future getAlllogin({String? query}) => Login_repo.getTodos(query: query);
+// class LoginRepository{
+//   final Login_repo=LsdbDao();
+//   Future getAllogin({String? query}) => Login_repo.getTodos(query: query);
    
-  Future insertTodo(Login todo) => Login_repo.createTodo(todo);
+//   Future insertTodo(Login todo) => Login_repo.createTodo(todo);
 
-  Future updateTodo(Login todo) => Login_repo.updateTodo(todo);
+//   Future updateTodo(Login todo) => Login_repo.updateTodo(todo);
 
-  Future deleteTodoById(int id) => Login_repo.deleteTodo(id);
+//   Future deleteTodoById(int id) => Login_repo.deleteTodo(id);
 
-  Future deleteAllTodos() => Login_repo.deleteAllTodos();
-}
+//   Future deleteAllTodos() => Login_repo.deleteAllTodos();
+// }

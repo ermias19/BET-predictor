@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 // part 'players_model.g.dart';
-class Image_url{
+class 
+{
   final String imgUrl;
   Image_url({required this.imgUrl});
   factory Image_url.fromJson(Map<String,dynamic> parsedJson){
